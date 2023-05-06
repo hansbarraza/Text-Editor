@@ -28,7 +28,7 @@ export const getDb = async () => {
   const store = tx.objectStore('jate');
   const items = await store.getAll();
   await tx.done;
-  console.error('Retrieved items froom the database', items);
+  console.error('Retrieved items from the database', items);
   return items;
 };
 
